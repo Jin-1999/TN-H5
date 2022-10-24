@@ -7,10 +7,13 @@
 
 <script setup lang="ts">
 import { RouterLink } from "vue-router";
+import { testApi } from '@/api/home'
+
+testApi().then((res) => console.log(res))
 </script>
 
 <style scoped>
 h1 {
-  font-size: 20px;
+  font-size: 32px;
 }
 </style>

@@ -1,3 +1,5 @@
 import request from "@/api";
 
-export const test = () => {};
+export const testApi = () => {
+    return request.get('/api/blade-auth/oauth/captcha')
+};
