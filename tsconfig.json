@@ -3,6 +3,11 @@
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"],
   "compilerOptions": {
     "baseUrl": ".",
+    // 是否允许编译js文件
+    "allowJs":true,
+    // 允许对不包含默认导出的模块使用默认导入
+    "allowSyntheticDefaultImports":true,
+    // 路径别名
     "paths": {
       "@/*": ["./src/*"]
     }

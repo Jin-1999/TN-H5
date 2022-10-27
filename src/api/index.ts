@@ -5,7 +5,6 @@ class RequestHttp {
   instance: AxiosInstance;
   constructor(config: AxiosRequestConfig) {
     this.instance = axios.create(config);
-
     this.instance.interceptors.request.use(
       (res: AxiosRequestConfig) => {
         // 请求头添加token，接口权限验证
