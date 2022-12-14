@@ -7,6 +7,7 @@
     "allowJs":true,
     // 允许对不包含默认导出的模块使用默认导入
     "allowSyntheticDefaultImports":true,
+    "lib": ["ES6"],
     // 路径别名
     "paths": {
       "@/*": ["./src/*"]
